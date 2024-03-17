@@ -1,0 +1,44 @@
+:local {
+	--primary: "#101010";
+	--secondary: "#313131";
+	--orangeColor: "#E85504";
+	--orangeSecondary: "#CF5734";
+	--lavenderColor: "#b999be";
+	--mauveColor: "#A96762";
+	--ecoColor: "#2dc98a";
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	color: #fff;
+	background-color: #101010;
+}
+
+main {
+	margin: 0 auto;
+}
+
+/* Scroll bar styles
+   width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
