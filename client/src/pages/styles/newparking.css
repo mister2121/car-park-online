@@ -1,0 +1,229 @@
+.new-park-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.new-park-form {
+	width: 800px;
+}
+
+.new-park-form-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+.new-park-header {
+	margin-top: 1rem;
+}
+
+.parking-add-bttn {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.parking-add-bttn {
+	display: inline-block;
+	background-color: #d85c27;
+	padding: 1rem;
+	font-size: 1.05rem;
+	border-radius: 1rem;
+	transition: 0.5s all;
+}
+
+.parking-add-bttn:hover {
+	background-color: #ff4400;
+}
+
+.new-park-heading {
+	margin: 3.5rem 0rem 0.5rem 0rem;
+	font-size: 2rem;
+}
+
+.new-park-input {
+	border: 0;
+	color: #f3f4f2;
+	width: 100%;
+	background-color: rgb(64, 64, 64);
+	padding: 1rem;
+	font-size: 1.05rem;
+	border-radius: 1rem;
+}
+
+.desc {
+	border-radius: 0.5rem;
+	min-height: 80px;
+}
+
+.new-park-button {
+	display: block;
+	border: none;
+	width: 100%;
+	border-radius: 1rem;
+	color: #f3f4f2;
+	background-color: rgb(207, 87, 52);
+	cursor: pointer;
+	transition: all 0.25s ease-out;
+}
+
+.save-button {
+	padding: 20px;
+	margin: 40px 0px 40px 0px;
+	font-size: 1.2rem;
+}
+
+.add-photo {
+	max-width: 120px;
+	padding: 15px;
+	font-size: 1.1rem;
+}
+
+.new-park-button:hover {
+	background-color: #ff4400;
+}
+
+.new-park-photo-wrapper,
+.new-park-input-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.open-time-input,
+.close-time-input,
+.max-cap-input,
+.hour-price-input {
+	flex: 25%;
+}
+
+.new-park-photo-wrapper h4,
+.new-park-input-wrapper h4 {
+	font-size: 1.2rem;
+}
+
+.file-photo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	color: #fff;
+	height: 150px;
+	width: 150px;
+}
+
+.new-park-photos {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 15px;
+	justify-content: center;
+}
+
+.new-park-photo-item {
+	height: 150px;
+	position: relative;
+}
+
+.new-park-photos img {
+	object-fit: cover;
+	height: 100%;
+	width: 250px;
+	box-sizing: border-box;
+	border-radius: 0.5rem;
+}
+
+.new-park-photos input {
+	display: none;
+}
+
+.mark-photo,
+.remove-photo {
+	position: absolute;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 1rem;
+	border: none;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	transition: 0.2s all;
+}
+
+.remove-photo {
+	bottom: 0;
+	right: 0;
+	margin: 0px 10px 5px 0px;
+}
+
+.mark-photo {
+	bottom: 0;
+	left: 0;
+	margin: 0px 0px 5px 10px;
+}
+
+.mark-photo:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+}
+
+.remove-photo:hover {
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.upload-icon {
+	height: 50px;
+	width: 50px;
+}
+
+.google-div {
+	height: 1000px;
+	width: 1000px;
+}
+
+@media (max-width: 850px) {
+	.new-park-container {
+		padding: 0 20px;
+	}
+
+	.new-park-form {
+		width: 100%;
+		max-width: 800px;
+	}
+
+	.new-park-photos {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	.file-photo {
+		width: 150px;
+		height: 150px;
+		font-size: 0.9rem;
+	}
+	.new-park-photos img {
+		width: 100%;
+	}
+
+	.mark-photo,
+	.remove-photo {
+		width: 30px;
+		height: 30px;
+	}
+
+	.new-park-input-wrapper {
+		flex-direction: column;
+	}
+
+	.open-time-input,
+	.close-time-input,
+	.max-cap-input,
+	.hour-price-input {
+		max-width: 300px;
+		width: 100%;
+	}
+}

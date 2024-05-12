@@ -1,0 +1,401 @@
+.intro {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 8%;
+	font-size: 3em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)),
+		url("../../../public/img/carpark.jpg");
+	background-size: cover;
+	background-position: center;
+	min-height: 80vh;
+}
+
+.intro h1 {
+	margin-top: 15rem;
+	margin-bottom: 2rem;
+}
+
+.intro span {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.intro a {
+	text-decoration: none;
+	color: #333;
+	font-size: 3em;
+}
+
+.intro-search {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.intro-search-btns {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+::placeholder {
+	color: #c3c3c3;
+}
+
+.search-input {
+	color: #fff;
+	background-color: rgb(64, 64, 64);
+	height: 80px;
+	width: 400px;
+	border: none;
+	font-size: 1.5rem;
+	border-radius: 2rem;
+	padding: 0rem 1.5rem 0rem 1.5rem;
+	box-shadow: 0px 0px 80px -7px rgba(0, 0, 0, 0.75);
+}
+
+.suggestions-container {
+	color: #fff;
+	position: absolute;
+	z-index: 999;
+	border: none;
+	background-color: rgb(64, 64, 64);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	margin-top: 10px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.suggestions-container > div {
+	padding: 5px 10px;
+	font-size: 1.5rem;
+	max-width: 400px;
+}
+
+.suggestions-container > div:hover {
+	background-color: rgb(16, 16, 16);
+}
+
+.intro .book-now {
+	height: 80px;
+	border: none;
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 2rem;
+	background-color: #cf5734;
+	box-shadow: 0px 0px 80px -7px rgba(0, 0, 0, 0.75);
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: all 0.25s ease-out;
+}
+
+.intro .book-now:hover {
+	background-color: #e85504;
+	color: #fff;
+}
+
+.home-container {
+	background-color: #101010;
+}
+
+.info-header {
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info-header h1 {
+	font-size: 3rem;
+}
+
+.info-one,
+.info-two,
+.info-three {
+	font-size: 1.15rem;
+	text-align: center;
+}
+
+.info-one {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.info-one-container {
+	background-color: #101010;
+}
+
+.info-two {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.info-two-container {
+	background-color: #101010;
+}
+
+.info-three {
+	max-width: 960px;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	max-width: 500px;
+}
+
+.footer-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.first-slide,
+.third-slide {
+	background-color: #fff;
+	color: #cf5734;
+	padding: 40px;
+	border-radius: 2rem;
+	max-width: 270px;
+	transition: all 0.5s ease-out;
+}
+
+.second-slide {
+	background-color: #cf5734;
+	color: #fff;
+	padding: 40px;
+	border-radius: 2rem;
+	max-width: 270px;
+	transition: all 0.5s ease-out;
+}
+
+.first-slide:hover,
+.second-slide:hover,
+.third-slide:hover {
+	transform: scale(1.1);
+}
+
+.material-symbols-outlined {
+	font-size: 5rem;
+}
+
+form h1 {
+	text-align: center;
+}
+
+.eco-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 40px 0px 40px 0px;
+}
+
+.first-slide-eco,
+.second-slide-eco,
+.third-slide-eco {
+	max-width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.eco-square-left,
+.eco-square-middle,
+.eco-square-right {
+	background-color: #2dc98a;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	overflow: hidden;
+	box-shadow: rgba(45, 201, 138, 0.25) 0px 50px 100px -20px,
+		rgba(45, 201, 138, 0.3) 0px 30px 60px -30px;
+}
+
+.eco-text {
+	font-weight: bold;
+	color: #2dc98a;
+}
+
+.eco-header {
+	margin-top: 4em;
+}
+
+.line {
+	width: 120px;
+	border: 1px solid #fff;
+	margin: 3px 3px 20px 3px;
+	display: inline-block;
+}
+
+.foreground-image,
+.foreground-image-two {
+	position: absolute;
+	z-index: 1;
+	width: 10%;
+	max-width: 200px;
+	height: auto;
+	transform: rotate(45deg);
+	top: 133%;
+	left: 33%;
+	transform: translate(-50%, -50%) rotate(25deg);
+}
+
+.foreground-image-two {
+	transform: translate(-50%, -50%) rotate(156deg);
+	top: 175%;
+	left: 77%;
+	width: 6%;
+}
+
+@media only screen and (max-width: 600px) {
+	.foreground-image,
+	.foreground-image-two {
+		width: 20%;
+	}
+}
+
+.aboutus-image {
+	width: 30rem;
+	height: auto;
+	border-radius: 2rem;
+}
+
+.aboutus-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 50px;
+}
+
+.aboutus-desc-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.aboutus-button {
+	width: 120px;
+	height: 50px;
+	font-size: 1em;
+	border: 0;
+	background-color: #cf5734;
+	border-radius: 5rem;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+
+.aboutus-button:hover {
+	background-color: #e85504;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.intro {
+		font-size: 2em;
+	}
+
+	.intro h1 {
+		margin-top: 10rem;
+	}
+
+	.intro-search-btns {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.search-input {
+		width: 100%;
+	}
+
+	.suggestions-container > div {
+		max-width: none;
+	}
+
+	.info-one {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.info-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.info-two {
+		font-size: 1rem;
+	}
+
+	.info-three {
+		margin-bottom: 3rem;
+	}
+
+	.first-slide,
+	.second-slide,
+	.third-slide {
+		max-width: 100%;
+	}
+
+	.aboutus-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+	.search-input {
+		width: 70%;
+	}
+
+	.intro h1 {
+		margin-top: 12rem;
+	}
+
+	.info-one {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.info-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.info-two {
+		font-size: 1rem;
+	}
+
+	.info-three {
+		margin-bottom: 3rem;
+	}
+
+	.first-slide,
+	.second-slide,
+	.third-slide {
+		max-width: 100%;
+	}
+
+	.aboutus-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+}

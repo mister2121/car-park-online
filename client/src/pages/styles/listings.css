@@ -1,0 +1,273 @@
+.listings-container {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	margin: 0 auto;
+	max-width: 1400px;
+	gap: 20px;
+}
+
+.listings-container h2 {
+	margin-bottom: 0;
+}
+
+.listings-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 650px;
+}
+
+.listing-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.listing-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: 10px;
+	padding: 0.7rem;
+}
+
+.listings-header-options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.listing-image-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.listing-image {
+	background-color: #fff;
+	width: 180px;
+	height: 150px;
+}
+
+.listing-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.listing-text {
+	display: flex;
+	flex-grow: 1;
+}
+
+.listing-text-main {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-left: 1rem;
+}
+
+.listing-text-main h1,
+.listing-text-main h2,
+.listing-text-main h3,
+.listing-text-main h4 {
+	margin: 0;
+}
+
+.select-listing {
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	border-radius: 1rem;
+	background-color: #cf5734;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.select-listing:hover {
+	background-color: #e85504;
+}
+
+.listing-button {
+	margin-top: 1rem;
+}
+
+.listing-button a {
+	color: #050505;
+	text-decoration: none;
+}
+
+.listing-list::after {
+	content: "";
+	flex: calc(50% - 10px);
+}
+
+.listing-desc h3 {
+	margin: 0rem 0rem 0.5rem 0rem;
+	padding: 0;
+}
+
+.listing-dist {
+	display: flex;
+	align-items: center;
+}
+
+.car-icon {
+	width: 1rem;
+}
+
+.listing-text-extra {
+	display: flex;
+	flex-direction: column;
+	margin: 0rem 0.3rem 0rem auto;
+	color: #cf5734;
+	justify-content: space-between;
+}
+
+.listing-price {
+	text-align: right;
+}
+
+.listing-price span {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.listing-price p {
+	font-size: 0.9rem;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.listing-open-times {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.open-span {
+	font-weight: bold;
+}
+
+.sort-icon {
+	width: 1.5rem;
+}
+
+.listing-sort {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+.listing-sort span {
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.sorting-list {
+	color: #fff;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+/* disables "x" button from the google maps info window */
+button.gm-ui-hover-effect {
+	display: none !important;
+}
+
+.info-window span {
+	font-size: 1rem;
+}
+
+.google-close-button {
+	display: block;
+	border: none;
+	border-radius: 0.5rem;
+	width: 100%;
+	transition: all 0.5s ease;
+}
+
+.google-close-button:hover {
+	background-color: #c3c3c3;
+}
+
+.google-book-button {
+	color: #fff;
+	width: 100%;
+	background-color: #cf5734;
+	display: block;
+	border: none;
+	border-radius: 0.5rem;
+	transition: all 0.5s ease;
+}
+
+.google-book-button:hover {
+	background-color: #e85504;
+}
+
+/* pagination */
+.paginationBttns {
+	width: 80%;
+	height: 40px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.paginationBttns a {
+	padding: 10px;
+	margin: 8px;
+	border-radius: 5px;
+	border: 1px solid #cf5734;
+	color: #cf5734;
+	cursor: pointer;
+}
+
+.paginationBttns a:hover {
+	background-color: #cf5734;
+	color: black;
+}
+
+.paginationActive a {
+	color: black;
+	background-color: #cf5734;
+}
+
+.listings-header-location {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 1rem 0rem 1rem 0rem;
+	width: 350px;
+}
+
+.listings-header-location h3 {
+	margin: 0.2rem 0rem;
+}
+
+@media (max-width: 1500px) {
+	.listings-container {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.listings-wrapper {
+		width: 100%;
+	}
+
+	.listing-info {
+		align-items: center;
+	}
+}

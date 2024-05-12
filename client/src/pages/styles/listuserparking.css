@@ -1,0 +1,159 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.parkings-wrapper {
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.parkings-header-container {
+	width: 800px;
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	justify-content: space-between;
+}
+
+.parkings-bttns-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.parking-count h2 {
+	margin: 0;
+}
+
+.parking-search {
+	border: none;
+	display: block;
+	border: 0;
+	color: #f3f4f2;
+	background-color: rgb(64, 64, 64);
+	padding: 1rem;
+	font-size: 1.05rem;
+	border-radius: 1rem;
+}
+
+.user-parking {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgb(35, 35, 35);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	min-width: 800px;
+	margin-bottom: 0.5rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+.user-parking-info {
+	flex-grow: 1;
+	margin-left: 1rem;
+}
+
+.user-parking-buttons {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.user-parking-button {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	border: 1px solid;
+	border-radius: 0.5rem;
+	padding: 0px 7px 0px 7px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s all;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+}
+
+.delete {
+	background-color: rgb(35, 35, 35);
+}
+
+.edit:hover {
+	background-color: #fff;
+	color: rgb(35, 35, 35);
+}
+
+.delete:hover {
+	background-color: red;
+	color: #fff;
+	cursor: pointer;
+}
+
+.user-parking-photo {
+	background-color: aliceblue;
+	width: 150px;
+	height: 100px;
+	border-radius: 1rem;
+}
+
+.user-parking-photo img {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+	object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+	.parkings-header-container {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.parkings-bttns-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.parking-search {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.user-parking {
+		min-width: auto;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin: 1rem 0rem 1rem 0rem;
+	}
+
+	.user-parking-buttons {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.user-parking-button {
+		margin-bottom: 0;
+	}
+
+	.user-parking-photo {
+		height: 120px;
+		max-width: 200px;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.user-parking-buttons {
+		justify-content: space-around;
+	}
+}
