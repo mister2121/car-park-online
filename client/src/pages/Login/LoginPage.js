@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
-import { UserContext } from "../UserContext"
+import { UserContext } from "../../components/UserContext"
 import { Navigate } from "react-router-dom"
-import "./styles/login.css"
+import "./login.css"
 
 export default function LoginPage() {
 	const [username, setUsername] = useState("")
@@ -33,7 +33,7 @@ export default function LoginPage() {
 	}
 
 	return (
-		<div className='form-wrapper'>
+		<div className='login-form-wrapper'>
 			<div className='login-form-container'>
 				<form className='login' onSubmit={login}>
 					<h1>Login</h1>
@@ -53,12 +53,12 @@ export default function LoginPage() {
 					/>
 
 					{error && (
-						<div className='register-error'>
+						<div className='login-error'>
 							<span className='error-message'>{error}</span>
 						</div>
 					)}
 					<div className='login-password'>
-						<span className='login- forgot-password'>Forgot password?</span>
+						<span>Forgot password?</span>
 					</div>
 					<button className='login-submit'>Login</button>
 				</form>

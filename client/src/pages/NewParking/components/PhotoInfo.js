@@ -1,6 +1,4 @@
 import React from "react"
-import Snackbar from "../../../components/Snackbar"
-import { SnackbarType } from "../../../components/Snackbar"
 
 const PhotoInfo = ({
 	photoLink,
@@ -8,8 +6,6 @@ const PhotoInfo = ({
 	addPhotoByLink,
 	addedPhoto,
 	uploadPhoto,
-	snackbarRef,
-	snackbarRefFail,
 	markPhoto,
 	removePhoto,
 }) => (
@@ -24,14 +20,6 @@ const PhotoInfo = ({
 			<button onClick={addPhotoByLink} className='new-park-button add-photo'>
 				Add photo
 			</button>
-			<Snackbar
-				ref={snackbarRef}
-				message='Success!'
-				type={SnackbarType.success}></Snackbar>
-			<Snackbar
-				ref={snackbarRefFail}
-				message='Something went wrong...'
-				type={SnackbarType.fail}></Snackbar>
 		</div>
 		<div className='new-park-photos'>
 			{addedPhoto.length > 0 &&

@@ -1,8 +1,7 @@
 import { Link, Navigate, useParams } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
-import Snackbar from "../../components/Snackbar"
 import GoogleMapPicker from "./components/GoogleMapPicker"
-import "../styles/newparking.css"
+import "./newparking.css"
 import NameInfo from "./components/NameInfo"
 import ImportantInfo from "./components/ImportantInfo"
 import PhotoInfo from "./components/PhotoInfo"
@@ -20,12 +19,6 @@ export default function NewParking() {
 	const [maxCap, setMaxCap] = useState("")
 	const [hourPrice, setHourPrice] = useState("")
 	const [redirect, setRedirect] = useState("")
-	const SnackbarType = {
-		success: "success",
-		fail: "fail",
-	}
-	const snackbarRef = useRef(null)
-	const snackbarRefFail = useRef(null)
 	const [selectedLocation, setSelectedLocation] = useState(null)
 	const [selectedParkingLocation, setSelectedParkingLocation] = useState(null)
 	const handleLocationSelect = location => {
@@ -90,10 +83,8 @@ export default function NewParking() {
 			})
 
 			setPhotoLink("")
-			snackbarRef.current.show()
 		} catch (error) {
 			console.error("Error uploading photo:", error)
-			snackbarRefFail.current.show()
 		}
 	}
 
@@ -297,8 +288,6 @@ export default function NewParking() {
 						uploadPhoto={uploadPhoto}
 						photoLink={photoLink}
 						setPhotoLink={setPhotoLink}
-						snackbarRef={snackbarRef}
-						snackbarRefFail={snackbarRefFail}
 						removePhoto={removePhoto}
 						markPhoto={markPhoto}
 					/>
@@ -361,14 +350,6 @@ export default function NewParking() {
 					{/* Saving or updating parking  */}
 
 					<button className='new-park-button save-button'>Save</button>
-					<Snackbar
-						ref={snackbarRef}
-						message='Success!'
-						type={SnackbarType.success}></Snackbar>
-					<Snackbar
-						ref={snackbarRefFail}
-						message='Something went wrong...'
-						type={SnackbarType.fail}></Snackbar>
 				</form>
 			</div>
 		</div>

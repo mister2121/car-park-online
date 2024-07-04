@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import "../styles/singlelistingpage.css"
+import "./singlelistingpage.css"
 import { useParams } from "react-router-dom"
 import ImageSlider from "./components/ImageSlider"
 import SingleListingGoogle from "./components/SingleListingGoogle"

@@ -1,6 +1,6 @@
-import { UserContext } from "../../UserContext"
+import { UserContext } from "../../components/UserContext"
 import { useContext, useEffect, useState } from "react"
-import "../styles/profile.css"
+import "./profile.css"
 import validateEmail from "./validators/EmailValidator"
 import validatePassword from "./validators/PasswordValidator"
 

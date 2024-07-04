@@ -1,4 +1,4 @@
-import "../styles/bookings.css"
+import "./bookings.css"
 import React, { useState, useEffect } from "react"
 import UpcomingParkings from "./components/UpcomingBookings"
 import HistoryBookings from "./components/HistoryBookings"

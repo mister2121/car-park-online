@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../../styles/singlelistingpage.css"
+import "./imageslider.css"
 
 export default function ImageSlider({ parking, setParking }) {
 	const [imageIndex, setImageIndex] = useState(0)

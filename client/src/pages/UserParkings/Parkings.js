@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "../styles/listuserparking.css"
+import "./listuserparking.css"
 import { useEffect } from "react"
 import { useState } from "react"
 

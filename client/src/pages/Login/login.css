@@ -1,11 +1,10 @@
-.form-wrapper {
+.login-form-wrapper {
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 }
 
-.login-form-container,
-.register-form-container {
+.login-form-container {
 	margin-top: 6rem;
 	border-radius: 10px;
 	box-shadow: rgba(207, 87, 52, 0.15) 0px 48px 100px 0px;
@@ -18,31 +17,9 @@
 	height: fit-content;
 }
 
-.register-form-container {
-	width: 350px;
-	height: fit-content;
-}
-
-form.login,
-form.register {
+form.login {
 	max-width: 400px;
 	margin: 0 auto;
-}
-
-.register-select {
-	width: 100%;
-	padding: 5px 7px;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 10px;
-	box-sizing: border-box;
-}
-
-input,
-select {
-	display: block;
-	width: 100%;
-	background-color: #fff;
 }
 
 .login-input {
@@ -52,7 +29,9 @@ select {
 	padding: 1rem;
 	margin-top: 1rem;
 	font-size: 1.05rem;
-	border-radius: 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 .login-submit {
@@ -69,16 +48,6 @@ select {
 	width: 100%;
 }
 
-.register-error {
-	width: 100%;
-	text-align: center;
-	border: 1px solid rgba(255, 255, 255, 0.8);
-	border-radius: 0.5rem;
-	margin: 10px 0px 5px 0px;
-	padding: 0.4rem;
-	color: rgba(255, 255, 255, 0.8);
-}
-
 .login-password {
 	color: rgb(207, 87, 52);
 	cursor: pointer;
@@ -90,4 +59,14 @@ select {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.login-error { 
+	width: 100%;
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 0.5rem;
+	margin: 10px 0px 5px 0px;
+	padding: 0.4rem;
+	color: rgba(255, 255, 255, 0.8);
 }

@@ -1,4 +1,4 @@
-import "../styles/listings.css"
+import "./listings.css"
 import { useEffect, useState } from "react"
 import ParkingList from "./components/ParkingList"
 import GoogleMapListings from "./components/GoogleMapListings"

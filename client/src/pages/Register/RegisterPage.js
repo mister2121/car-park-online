@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../styles/login.css"
+import "./register.css"
 import "./validators/RegisterValidation.js"
 import validateRegister from "./validators/RegisterValidation.js"
 import { Navigate } from "react-router-dom"
@@ -56,13 +56,13 @@ export default function RegisterPage() {
 	}
 
 	return (
-		<div className='form-wrapper'>
+		<div className='register-form-wrapper'>
 			<div className='register-form-container'>
 				<form className='register' onSubmit={register}>
 					<h1>Register</h1>
 
 					<input
-						className='login-input'
+						className='register-input'
 						type='text'
 						placeholder='username'
 						value={username}
@@ -76,7 +76,7 @@ export default function RegisterPage() {
 					)}
 
 					<input
-						className='login-input'
+						className='register-input'
 						type='text'
 						placeholder='email'
 						value={email}
@@ -90,7 +90,7 @@ export default function RegisterPage() {
 					)}
 
 					<input
-						className='login-input'
+						className='register-input'
 						type='password'
 						placeholder='password'
 						value={password}
@@ -104,7 +104,7 @@ export default function RegisterPage() {
 					)}
 
 					<select
-						className='login-input register-select'
+						className='register-input register-select'
 						value={type}
 						onChange={ev => setType(ev.target.value)}
 						required>
@@ -118,7 +118,7 @@ export default function RegisterPage() {
 						</div>
 					)}
 
-					<button className='login-submit'>Register</button>
+					<button className='register-submit'>Register</button>
 				</form>
 			</div>
 		</div>

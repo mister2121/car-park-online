@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "../styles/homepage.css"
+import "./homepage.css"
 import SearchBox from "./components/SearchBox"
 
 export default function HomePage() {
