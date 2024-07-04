@@ -1,5 +1,5 @@
 // Booking card component - displays front-end information about id, date, name, location, plate, price
-// Child for UpcomingBookings.js and HistoryBookings.js
+// Child for UpcomingBookings.jsx and HistoryBookings.jsx
 
 const BookingCard = ({ booking }) => {
 	return (

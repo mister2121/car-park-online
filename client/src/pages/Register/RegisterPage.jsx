@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./register.css"
-import "./validators/RegisterValidation.js"
-import validateRegister from "./validators/RegisterValidation.js"
+import "./validators/RegisterValidation"
+import validateRegister from "./validators/RegisterValidation"
 import { Navigate } from "react-router-dom"
 
 export default function RegisterPage() {
@@ -15,7 +15,7 @@ export default function RegisterPage() {
 	async function register(ev) {
 		ev.preventDefault()
 
-		// Check if there any errors coming from the RegisterValidator.js 
+		// Check if there any errors coming from the RegisterValidator.jsx 
 		// If there are none, proceed with the register 
 		
 		const validationErrors = validateRegister(username, password, email, type)

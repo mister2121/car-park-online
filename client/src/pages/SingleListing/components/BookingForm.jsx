@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Navigate } from "react-router-dom"
 import PaymentModal from "./PaymentModal"
-import validateBooking from "../validators/BookingValidator.js"
+import validateBooking from "../validators/BookingValidator"
 
 export default function BookingForm({ parking, setParking }) {
 	const [entryDate, setEntryDate] = useState("")

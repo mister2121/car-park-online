@@ -26,8 +26,8 @@ mongoose
 	.catch(err => console.log("Database not connected", err))
 
 // Upload photos functionality
+app.use(cors({ credentials: true, origin: "http://localhost:5173" }))
 app.use("/uploads", express.static(__dirname + "/uploads"))
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }))
 app.use(express.json())
 app.use(cookieParser())
 

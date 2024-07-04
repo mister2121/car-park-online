@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react"
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api"
-const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_API_GOOGLE_MAPS_API_KEY
+
+console.log("Google Maps API Key:", GOOGLE_MAPS_API_KEY); // Add this line to debug
 
 // Styles for div with map
 const containerStyle = {

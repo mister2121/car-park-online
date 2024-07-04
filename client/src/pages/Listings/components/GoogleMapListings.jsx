@@ -4,11 +4,10 @@ import {
 	useJsApiLoader,
 	Marker,
 	InfoWindow,
-	InfoWindowF,
 } from "@react-google-maps/api"
 import "../listings.css"
 
-const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_API_GOOGLE_MAPS_API_KEY
 
 function GoogleMapListings({ initialLocation, listings, selectedLocation }) {
 	const { isLoaded } = useJsApiLoader({

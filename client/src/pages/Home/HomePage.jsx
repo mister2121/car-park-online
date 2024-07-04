@@ -89,11 +89,7 @@ export default function HomePage() {
 					<h1>About us</h1>
 					<div className='line'></div>
 					<div className='aboutus-container'>
-						<img
-							src='./img/aboutus.jpg'
-							alt='Company meeting'
-							className='aboutus-image'
-						/>
+						<img src="./aboutus.jpg" alt="Company meeting" className="aboutus-image" />
 						<div className='aboutus-desc-container'>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
