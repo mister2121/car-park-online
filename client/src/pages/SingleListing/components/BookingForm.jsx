@@ -99,7 +99,7 @@ export default function BookingForm({ parking, setParking }) {
 	}
 
 	return (
-		<>
+		<div className='single-listing-booking-form'>
 			<div className='single-listing-title'>
 				<h1>Interested? Book now:</h1>
 			</div>
@@ -274,6 +274,6 @@ export default function BookingForm({ parking, setParking }) {
 					<a className='report-link'>Report this listing</a>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
