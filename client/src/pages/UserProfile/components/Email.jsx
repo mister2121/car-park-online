@@ -9,7 +9,7 @@ const Email = ({ userInfo, newEmail, setNewEmail, errors, updateEmail }) => {
                         <br />
                         <span style={{ fontWeight: "bold" }}>{userInfo.email}</span>
                     </p>
-                    <div>
+                    <div className="profile-password-input">
                         <label htmlFor='newemail'>New email</label>
                         <input
                             id='newemail'
